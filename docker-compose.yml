@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  movies:
+    image: manikantacherry/netflix:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+  train:
+    image: manikantacherry/prime:latest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+  
