@@ -3,13 +3,13 @@ services:
   movies:
     image: manikantacherry/sai:latest
     ports:
-      - "85:80"
+      - "87:80"
     deploy:
       replicas: 3
   train:
     image: manikantacherry/mani:latest
     ports:
-      - "86:80"
+      - "88:80"
     deploy:
       replicas: 3
   
