@@ -1,15 +1,15 @@
 version: '3.8'
 services:
   movies:
-    image: manikantacherry/sai:latest
-    ports:
-      - "87:80"
-    deploy:
-      replicas: 3
-  train:
     image: manikantacherry/mani:latest
     ports:
       - "88:80"
+    deploy:
+      replicas: 3
+  train:
+    image: manikantacherry/cherry:latest
+    ports:
+      - "89:80"
     deploy:
       replicas: 3
   
