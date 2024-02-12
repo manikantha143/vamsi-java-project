@@ -3,7 +3,7 @@ services:
   movies:
     image: manikantacherry/mani:latest
     ports:
-      - "88:80"
+      - "80:80"
     deploy:
       replicas: 3
   train:
